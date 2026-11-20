@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 92" role="img" aria-label="Sitefolio">
+  <g transform="translate(40 0) scale(1.5)"><path d="M19 3H5v26h20V9" stroke="#eceeef" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+  <path d="M19 3l6 6" stroke="#eceeef" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+  <path d="M9 25h12" stroke="#eceeef" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+  <path d="M11 19h10" stroke="#eceeef" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+  <path d="M15 13h6" stroke="#eceeef" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+  <rect x="9" y="11" width="4" height="4" fill="#22d3ee"/></g>
+  <text x="64" y="86" text-anchor="middle" font-size="18" font-family="Geist, 'Helvetica Neue', Arial, sans-serif" font-weight="500" letter-spacing="1.6" fill="#eceeef">SITEFOLIO</text>
+</svg>
