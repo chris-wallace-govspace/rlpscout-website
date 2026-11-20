@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Sightrule mark">
+  <rect width="32" height="32" rx="2" fill="#26292c"/>
+  <rect x="2" y="24" width="28" height="4" fill="#eceeef"/>
+  <path d="M11 21v0M15 21v0M19 21v0" stroke="#6b7278" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+  <path d="M5 21V5M25 21v-6" stroke="#eceeef" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+  <path d="M5 9h24" stroke="#22d3ee" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+</svg>

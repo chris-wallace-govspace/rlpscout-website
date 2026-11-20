@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Lessora">
+  <path d="M3 3h26v26H3z" stroke="#26292c" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+  <path d="M7 17v8h7" stroke="#0e7490" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+  <path d="M16 21.5L11.65 14.50A5 5 0 1 1 20.35 14.50Z" fill="#0e7490" fill-rule="evenodd"/>
+  <circle cx="16" cy="12" r="2" fill="#26292c"/>
+</svg>

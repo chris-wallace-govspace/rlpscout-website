@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 92" role="img" aria-label="Sightrule">
+  <g transform="translate(40 0) scale(1.5)">
+  <rect x="2" y="24" width="28" height="4" fill="#26292c"/>
+  <path d="M11 21v0M15 21v0M19 21v0" stroke="#9aa2a8" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+  <path d="M5 21V5M25 21v-6" stroke="#26292c" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+  <path d="M5 9h24" stroke="#0e7490" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none"/></g>
+  <text x="64" y="86" text-anchor="middle" font-size="18" font-family="Geist, 'Helvetica Neue', Arial, sans-serif" font-weight="500" letter-spacing="1.6" fill="#26292c">SIGHTRULE</text>
+</svg>

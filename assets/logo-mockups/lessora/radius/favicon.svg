@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Lessora">
+  <rect width="32" height="32" rx="2" fill="#26292c"/>
+  <circle cx="14" cy="18" r="3" fill="#22d3ee"/>
+  <path d="M14 11a7 7 0 1 1 0 14a7 7 0 1 1 0-14" stroke="#6b7278" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+  <path d="M14 6a12 12 0 1 1 0 24a12 12 0 1 1 0-24" stroke="#6b7278" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+  <rect x="24" y="4" width="4" height="4" fill="#eceeef"/>
+  <path d="M22 2h8v8h-8z" stroke="#22d3ee" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+</svg>

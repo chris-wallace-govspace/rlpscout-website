@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Lessora">
+  <rect width="32" height="32" rx="2" fill="#26292c"/>
+  <path d="M3 3h26v26H3z" stroke="#9aa2a8" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+  <path d="M7 17v8h7" stroke="#22d3ee" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+  <path d="M16 21.5L11.65 14.50A5 5 0 1 1 20.35 14.50ZM16 10.00a2.00 2.00 0 1 0 0 4.00a2.00 2.00 0 1 0 0 -4.00Z" fill="#eceeef" fill-rule="evenodd"/>
+</svg>

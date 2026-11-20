@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Ledger Elevation mark">
+  <rect width="32" height="32" rx="2" fill="#26292c"/>
+  <path d="M21 7h8M15 13h14M9 19h20M3 25h26" stroke="#eceeef" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+  <rect x="15" y="5" width="4" height="4" fill="#22d3ee"/>
+</svg>
