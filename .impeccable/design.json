@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-20T13:05:32.453251Z",
+  "title": "Design System: RLPSCOUT AI LLC",
+  "extensions": {
+    "colorMeta": {
+      "inspection-cyan": {
+        "role": "primary",
+        "displayName": "Inspection Cyan",
+        "tonalRamp": [
+          "#083344",
+          "#155e75",
+          "#0e7490",
+          "#0891b2",
+          "#06b6d4",
+          "#22d3ee",
+          "#67e8f9",
+          "#cffafe"
+        ]
+      },
+      "survey-teal": {
+        "role": "secondary",
+        "displayName": "Survey Teal",
+        "tonalRamp": [
+          "#042f2e",
+          "#115e59",
+          "#0f766e",
+          "#0d9488",
+          "#14b8a6",
+          "#2dd4bf",
+          "#5eead4",
+          "#ccfbf1"
+        ]
+      },
+      "caution-amber": {
+        "role": "tertiary",
+        "displayName": "Caution Amber"
+      },
+      "charcoal-ground": {
+        "role": "neutral",
+        "displayName": "Charcoal Ground",
+        "tonalRamp": [
+          "#1e2124",
+          "#26292c",
+          "#2d3134",
+          "#34393d",
+          "#474c51",
+          "#6b7278",
+          "#9aa2a8",
+          "#eceeef"
+        ]
+      }
+    },
+    "shadows": [
+      {
+        "name": "focus-halo",
+        "value": "0 0 0 3px rgba(34, 211, 238, 0.18)",
+        "purpose": "Input focus only; the system is otherwise flat."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Arrivals: reveals, panels, underline sweeps, step marker."
+      },
+      {
+        "name": "ease-ui",
+        "value": "cubic-bezier(0.25, 1, 0.5, 1)",
+        "purpose": "Feedback: hover and press color changes."
+      },
+      {
+        "name": "t-fast",
+        "value": "160ms",
+        "purpose": "Hover and press feedback."
+      },
+      {
+        "name": "t-mid",
+        "value": "240ms",
+        "purpose": "State changes: tabs, header, nav underline."
+      },
+      {
+        "name": "reveal",
+        "value": "700ms ease-out, 90ms stagger",
+        "purpose": "One-time entrance as content enters the viewport, gated on .js."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "stack-sm",
+        "value": "560px"
+      },
+      {
+        "name": "rows",
+        "value": "640px"
+      },
+      {
+        "name": "strips",
+        "value": "760px"
+      },
+      {
+        "name": "nav",
+        "value": "900px"
+      },
+      {
+        "name": "hero",
+        "value": "1000px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one next action in a region.",
+      "html": "<button class=\"ds-btn-primary\">View capability statement</button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;min-height:46px;padding:0 20px;border:0;border-radius:2px;background:#14b8a6;color:#062521;font:500 0.95rem Geist,sans-serif;cursor:pointer;transition:background-color 160ms cubic-bezier(.25,1,.5,1)}.ds-btn-primary:hover{background:#2dd4bf}.ds-btn-primary:active{transform:translateY(1px)}.ds-btn-primary:focus-visible{outline:2px solid #22d3ee;outline-offset:3px}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action beside a primary.",
+      "html": "<button class=\"ds-btn-ghost\">See how we match RLPs</button>",
+      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;min-height:46px;padding:0 20px;border:1px solid #6b7278;border-radius:2px;background:rgba(38,41,44,.72);color:#eceeef;font:500 0.95rem Geist,sans-serif;cursor:pointer;transition:border-color 160ms,background-color 160ms}.ds-btn-ghost:hover{border-color:#eceeef;background:#34393d}.ds-btn-ghost:focus-visible{outline:2px solid #22d3ee;outline-offset:3px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Inquiry form field.",
+      "html": "<input class=\"ds-input\" placeholder=\"Agency or company\">",
+      "css": ".ds-input{min-height:46px;padding:10px 12px;border:1px solid #474c51;border-radius:2px;background:#26292c;color:#eceeef;font:1rem Geist,sans-serif;caret-color:#22d3ee;transition:border-color 160ms,box-shadow 160ms}.ds-input:hover{border-color:#6b7278}.ds-input:focus{outline:none;border-color:#22d3ee;box-shadow:0 0 0 3px rgba(34,211,238,.18)}.ds-input::placeholder{color:#9aa2a8}"
+    },
+    {
+      "name": "Nav Link",
+      "kind": "nav",
+      "description": "Header link with sweep underline; current section stays cyan.",
+      "html": "<a class=\"ds-nav\" href=\"#\">Market Data</a> <a class=\"ds-nav is-current\" href=\"#\">Company</a>",
+      "css": ".ds-nav{position:relative;display:inline-flex;align-items:center;height:40px;padding:0 14px;color:#d3d8db;text-decoration:none;font:0.9rem Geist,sans-serif}.ds-nav::after{content:'';position:absolute;left:14px;right:14px;bottom:6px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform 240ms cubic-bezier(.16,1,.3,1)}.ds-nav:hover{color:#eceeef}.ds-nav:hover::after{transform:scaleX(1)}.ds-nav.is-current::after{background:#22d3ee;transform:scaleX(1)}"
+    },
+    {
+      "name": "Status Badge",
+      "kind": "chip",
+      "refersTo": "status-met",
+      "description": "Requirement status in the trace.",
+      "html": "<span class=\"ds-status ok\">Met</span> <span class=\"ds-status work\">Needs work</span>",
+      "css": ".ds-status{display:inline-block;padding:3px 10px;border:1px solid;border-radius:2px;font:0.8125rem Geist,sans-serif}.ds-status.ok{color:#7ee8d8;border-color:rgba(20,184,166,.55)}.ds-status.work{color:#f2b84b;border-color:rgba(242,184,75,.55)}"
+    },
+    {
+      "name": "Trace Row",
+      "kind": "custom",
+      "description": "Signature: requirement, source, quote, status.",
+      "html": "<div class=\"ds-trace\"><span class=\"ds-req\">Parking</span><span class=\"ds-src\">RLP, p. 6</span><q class=\"ds-q\">[x] reserved spaces on site</q><span class=\"ds-st\">Met</span></div>",
+      "css": ".ds-trace{display:grid;grid-template-columns:150px 1fr auto;grid-template-areas:'req q st' 'src q st';gap:2px 20px;padding:14px 18px;border:1px solid #474c51;background:#26292c;align-items:center;font-family:Geist,sans-serif;color:#eceeef}.ds-req{grid-area:req}.ds-src{grid-area:src;font:0.75rem 'Geist Mono',monospace;color:#22d3ee}.ds-q{grid-area:q;quotes:none;color:#b0b7bc;border-left:1px solid #6b7278;padding-left:14px}.ds-st{grid-area:st;padding:3px 10px;border:1px solid rgba(20,184,166,.55);border-radius:2px;color:#7ee8d8;font-size:0.8125rem}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Inspection Ledger",
+    "keyCharacteristics": [
+      "Dark only: charcoal ground (#26292c) with an alternate band one step lighter for rhythm.",
+      "1px ruled seams carry all structure; corners are near-square (2px).",
+      "Flat: no shadows on content; depth is tonal stepping and rules.",
+      "Geist at regular weight with tight negative tracking for headings; Geist Mono only for data (IDs, codes, sources, readouts).",
+      "One cyan signal, one teal action, one amber caution."
+    ],
+    "rules": [
+      {
+        "name": "The Inspection Light Rule",
+        "section": "colors",
+        "body": "Cyan marks only what is checked, selected or focused. If an element is not in one of those states, it is not cyan."
+      },
+      {
+        "name": "The One Action Rule",
+        "section": "colors",
+        "body": "Teal fill belongs to the action a visitor should take next. One teal button per view region; secondary actions are ghost buttons or underlined links."
+      },
+      {
+        "name": "The AA Floor Rule",
+        "section": "colors",
+        "body": "No text below Ink Muted on any charcoal surface. A new gray must clear 4.5:1 against the band (charcoal-band), not just the ground."
+      },
+      {
+        "name": "The Mono Is Data Rule",
+        "section": "typography",
+        "body": "Geist Mono is for identifiers, citations, measurements and readouts. Never for headings, buttons or decoration."
+      },
+      {
+        "name": "The No Eyebrow Rule",
+        "section": "typography",
+        "body": "No small label above a section heading. The heading carries the section; the nav already names it."
+      },
+      {
+        "name": "The Seam Not Shadow Rule",
+        "section": "elevation",
+        "body": "If two surfaces need separating, draw a 1px rule or step the tone. Never add a drop shadow."
+      }
+    ],
+    "overview": "The site reads like a charcoal record book held under an inspection lamp. Structure comes from thin ruled lines, not from boxes: sections are full-width bands separated by a hairline, tables and lists are ruled rows, and adjacent panels share a seam instead of floating as cards. Every fact on the page is the kind an officer can verify, so the layout presents facts the way a ledger does: label on the left, value on the right, source stated beside the number.\n\nCyan is the inspection light. It is rationed to the things being checked or currently selected: the active nav item, the active step, a source citation, a scan line passing over a requirement. Teal is the act of committing (the primary action and a small set of confirmations). Everything else is neutral charcoal and cool gray ink, so the light always means something.\n\nMotion has one authored moment and otherwise stays functional. The requirement trace scans its rows and resolves each status; the hero scanner sweeps the skyline. Everything else is feedback (hover, press, tab change) or a single quiet reveal as content enters the viewport.",
+    "dos": [
+      "**Do** separate surfaces with 1px rules (Rule, Rule Soft) and tonal steps between ground, band and raised.",
+      "**Do** state the source next to every figure, in Geist Mono and Ink Muted.",
+      "**Do** ease arrivals on cubic-bezier(0.16, 1, 0.3, 1) and UI feedback on cubic-bezier(0.25, 1, 0.5, 1), at 160ms for feedback and 240ms for state changes.",
+      "**Do** gate entrance reveals on the `.js` class so content is visible when scripts fail, and give every animation a reduced-motion path that keeps fades and drops movement.",
+      "**Do** keep every text color at or above Ink Muted on the band."
+    ],
+    "donts": [
+      "**Don't** add drop shadows, glass blur or glows to content surfaces.",
+      "**Don't** round corners past 2px on page components.",
+      "**Don't** put an eyebrow label above a section heading.",
+      "**Don't** use cyan for anything that is not checked, selected or focused, and don't fill large areas with it.",
+      "**Don't** use a colored side stripe (a border-left over 1px) on callouts or rows.",
+      "**Don't** use Geist Mono for headings, buttons or decoration.",
+      "**Don't** show testimonials, client logos, award counts or case studies; the firm has none yet, and PRODUCT.md says so."
+    ]
+  }
+}
