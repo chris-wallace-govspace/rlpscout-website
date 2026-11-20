@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RLPSCOUT AI LLC | Government lease offeror and lessor</title>
+  <meta name="description" content="RLPSCOUT AI LLC responds to government Requests for Lease Proposals as offeror and lessor. We check every line of the RLP against the building, trace each requirement to its source, and submit complete offers on time at a competitive price.">
+  <meta name="theme-color" content="#26292c">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="RLPSCOUT home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M7 12V7h5M20 7h5v5M25 20v5h-5M12 25H7v-5" stroke="currentColor" stroke-width="2" fill="none"/>
+          <path d="M12.5 22V13.5h4V10h3v12" stroke="#eceeef" stroke-width="1.8" fill="none"/>
+        </svg>
+        <span class="brand-word">RLPSCOUT</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span class="sr-only">Menu</span>
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#what-we-do">What We Do</a>
+        <a href="#market-data">Market Data</a>
+        <a href="#commitments">Commitments</a>
+        <a href="#company">Company</a>
+        <a class="nav-cta" href="#contact">Contact
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11l6-6M6 5h5v5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas class="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <p class="sr-only">Animated illustration: a city skyline is scanned from left to right. Bounding boxes lock onto buildings inside an agency's delineated area and check square footage, parking, floodplain and source references. Buildings outside the boundary are marked excluded.</p>
+
+      <div class="hud" aria-hidden="true">
+        <div class="hud-corner tl"></div><div class="hud-corner tr"></div>
+        <div class="hud-corner bl"></div><div class="hud-corner br"></div>
+        <div class="hud-status"><span class="hud-dot"></span><span data-hud="status">RLP Engine: Active</span></div>
+        <div class="hud-readout hud-left">Buildings Evaluated: <b data-hud="count">0</b></div>
+        <div class="hud-readout hud-right">RLP Verification: <b data-hud="timer">0.0s</b></div>
+      </div>
+
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1 id="hero-title">We start from the RLP. We deliver the space it describes.</h1>
+          <p class="hero-lede">RLPSCOUT AI LLC responds to government lease requirements as offeror and lessor. We read every line of the Request for Lease Proposals, check each one against the building, and submit a complete offer before the deadline, priced to compete.</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" type="button" data-open-cap>View capability statement</button>
+            <a class="btn btn-ghost" href="#what-we-do">See how we match RLPs</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Registration summary">
+          <div class="hero-card-row">
+            <p>Offeror and lessor<br>for government space</p>
+            <p class="hero-clock"><span data-clock>--:--:--</span><small>Mountain Time</small></p>
+          </div>
+          <dl class="hero-card-data">
+            <div><dt>SAM.gov</dt><dd>Active through Oct 23, 2027</dd></div>
+            <div><dt>UEI</dt><dd class="mono">PWYNWV6FJJ18</dd></div>
+            <div><dt>CAGE</dt><dd class="mono">26TB9</dd></div>
+            <div><dt>NAICS</dt><dd class="mono">531120</dd></div>
+          </dl>
+          <p class="hero-card-addr">South Jordan, Utah</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ HOW WE WORK ============ -->
+    <section class="section" id="what-we-do" aria-labelledby="work-title">
+      <div class="wrap split">
+        <div class="split-head">
+          <p class="section-label">What we do</p>
+          <h2 id="work-title">One accountable party, from the RLP to the lease.</h2>
+          <p class="section-intro">We do not broker space to the government and step away. We respond in our own name, secure the building, and sign as lessor. Each offer follows the same four steps.</p>
+        </div>
+
+        <div class="steps" data-steps>
+          <div class="steps-tabs" role="tablist" aria-label="How we work">
+            <button role="tab" id="tab-1" aria-controls="panel-1" aria-selected="true"><span>01</span> Offer</button>
+            <button role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1"><span>02</span> Scout</button>
+            <button role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false" tabindex="-1"><span>03</span> Check</button>
+            <button role="tab" id="tab-4" aria-controls="panel-4" aria-selected="false" tabindex="-1"><span>04</span> Submit</button>
+          </div>
+
+          <article class="step-panel" role="tabpanel" id="panel-1" aria-labelledby="tab-1" tabindex="0">
+            <div class="step-meta"><span>Step 1</span><span>of 4</span></div>
+            <h3>We are the offeror.</h3>
+            <p>RLPScout submits the offer and signs the lease as lessor of record. We secure site control through agreements with building owners and strategic partners, so the government deals with one party that answers for the space, the schedule, and the price.</p>
+            <ul class="ticks">
+              <li>Offer submitted in RLPSCOUT AI LLC's name, registered in SAM.gov</li>
+              <li>Site control documented before the offer goes in</li>
+              <li>One point of contact through award, build-out, and acceptance</li>
+            </ul>
+            <svg class="step-art" viewBox="0 0 320 140" aria-hidden="true">
+              <rect x="20" y="30" width="110" height="80" rx="3" class="a-line"/>
+              <path d="M36 54h60M36 70h78M36 86h44" class="a-dim"/>
+              <rect x="190" y="30" width="110" height="80" rx="3" class="a-line"/>
+              <path d="M206 54h60M206 70h78M206 86h44" class="a-dim"/>
+              <path d="M130 70h60" class="a-accent" stroke-dasharray="4 4"/>
+              <circle cx="160" cy="70" r="9" class="a-fill"/>
+              <text x="20" y="128" class="a-text">Agency requirement</text>
+              <text x="190" y="128" class="a-text">RLPScout, lessor</text>
+            </svg>
+          </article>
+
+          <article class="step-panel" role="tabpanel" id="panel-2" aria-labelledby="tab-2" tabindex="0" hidden>
+            <div class="step-meta"><span>Step 2</span><span>of 4</span></div>
+            <h3>We search inside the delineated area.</h3>
+            <p>The delineated area in the RLP is a hard boundary, so we treat it as one. We match the boundary against more than 5,000 tracked buildings, then work with our licensed real estate professional in that state to confirm availability, ownership, and the owner's willingness to commit.</p>
+            <ul class="ticks">
+              <li>Candidates plotted against the exact boundary streets</li>
+              <li>Buildings outside the boundary excluded, not argued for</li>
+              <li>Local market checked by a licensed professional on the ground</li>
+            </ul>
+            <svg class="step-art" viewBox="0 0 320 140" aria-hidden="true">
+              <rect x="70" y="14" width="180" height="104" class="a-accent" stroke-dasharray="5 4"/>
+              <rect x="22" y="70" width="24" height="40" class="a-dim-fill"/>
+              <rect x="96" y="52" width="34" height="58" class="a-fill"/>
+              <rect x="146" y="38" width="28" height="72" class="a-fill"/>
+              <rect x="190" y="62" width="40" height="48" class="a-dim-fill"/>
+              <rect x="276" y="48" width="26" height="62" class="a-dim-fill"/>
+              <rect x="92" y="48" width="42" height="66" class="a-line-accent"/>
+              <rect x="142" y="34" width="36" height="80" class="a-line-accent"/>
+              <text x="74" y="132" class="a-text">Delineated area</text>
+              <text x="250" y="132" class="a-text">Excluded</text>
+            </svg>
+          </article>
+
+          <article class="step-panel" role="tabpanel" id="panel-3" aria-labelledby="tab-3" tabindex="0" hidden>
+            <div class="step-meta"><span>Step 3</span><span>of 4</span></div>
+            <h3>We check every line against the building.</h3>
+            <p>We parse the RLP and its attachments into individual requirements: ABOA square footage, parking, security, floodplain, accessibility, fire and life safety, and the delivery schedule. Every requirement is traced to its source, by document, page, and quote, and marked as met, not met, or needing work before we offer.</p>
+            <ul class="ticks">
+              <li>Each requirement linked to the exact page and wording</li>
+              <li>Gaps found before submission, not after award</li>
+              <li>A reviewer can follow every decision back to the RLP</li>
+            </ul>
+            <svg class="step-art" viewBox="0 0 320 140" aria-hidden="true">
+              <rect x="20" y="16" width="280" height="24" rx="2" class="a-line"/>
+              <rect x="20" y="48" width="280" height="24" rx="2" class="a-line"/>
+              <rect x="20" y="80" width="280" height="24" rx="2" class="a-line"/>
+              <path d="M32 28h110M32 60h90M32 92h120" class="a-dim"/>
+              <text x="200" y="32" class="a-text">p.14</text>
+              <text x="200" y="64" class="a-text">p.22</text>
+              <text x="200" y="96" class="a-text">p.31</text>
+              <path d="M272 28l5 5 9-10M272 60l5 5 9-10" class="a-accent"/>
+              <path d="M274 87l10 10M284 87l-10 10" class="a-warn"/>
+              <text x="20" y="128" class="a-text">Requirement, source, status</text>
+            </svg>
+          </article>
+
+          <article class="step-panel" role="tabpanel" id="panel-4" aria-labelledby="tab-4" tabindex="0" hidden>
+            <div class="step-meta"><span>Step 4</span><span>of 4</span></div>
+            <h3>We submit a complete package before the deadline.</h3>
+            <p>An incomplete offer is a weak offer. We assemble everything the RLP asks for, check it against the submission list, and deliver it before the due date and time.</p>
+            <ul class="forms-list">
+              <li><b>GSA Form 1364</b> Proposal to Lease Space</li>
+              <li><b>GSA Form 1217</b> Lessor's Annual Cost Statement</li>
+              <li><b>GSA Form 3518-SAM</b> Representations and Certifications</li>
+              <li><b>GSA Form 12000</b> Prelease Fire Protection and Life Safety Evaluation</li>
+              <li><b>Floor plans</b> Showing the offered space and ABOA calculation</li>
+              <li><b>Site control</b> Evidence of the right to offer the building</li>
+              <li><b>FEMA flood map</b> Floodplain status for the site</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARKET DATA ============ -->
+    <section class="section section-alt" id="market-data" aria-labelledby="data-title">
+      <div class="wrap split">
+        <div class="split-head">
+          <p class="section-label">Market data</p>
+          <h2 id="data-title">We watch the federal lease market so we can answer it quickly.</h2>
+          <p class="section-intro">Our data shows us where requirements are open now and where they are likely to come next. Our technology narrows the search. Partners and licensed professionals close it.</p>
+        </div>
+
+        <div class="data-body">
+          <table class="ledger">
+            <caption class="sr-only">What RLPScout tracks</caption>
+            <thead>
+              <tr><th scope="col">Figure</th><th scope="col">What we track</th><th scope="col">Source</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="ledger-num">495</td>
+                <td>Federal lease solicitations followed, <strong>103 of them open for offers</strong></td>
+                <td>SAM.gov</td>
+              </tr>
+              <tr>
+                <td class="ledger-num">1,922</td>
+                <td>Expiring federal leases watched, the likely next round of requirements</td>
+                <td>GSA lease inventory, dated Nov 2, 2026</td>
+              </tr>
+              <tr>
+                <td class="ledger-num">5,000+</td>
+                <td>Buildings tracked to match against delineated areas</td>
+                <td>RLPScout building data</td>
+              </tr>
+              <tr>
+                <td class="ledger-num">Every line</td>
+                <td>Requirement traced to its source: document, page, and quote</td>
+                <td>The RLP and its attachments</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <figure class="trace">
+            <figcaption>
+              <span>What a traced requirement looks like</span>
+              <small>Format example, not taken from a specific solicitation</small>
+            </figcaption>
+            <div class="trace-rows" role="list">
+              <div class="trace-row" role="listitem">
+                <span class="trace-req">ABOA square footage</span>
+                <span class="trace-src">RLP, p. 3</span>
+                <q>…a minimum of [x] ABOA square feet…</q>
+                <span class="status ok">Met</span>
+              </div>
+              <div class="trace-row" role="listitem">
+                <span class="trace-req">Parking</span>
+                <span class="trace-src">RLP, p. 6</span>
+                <q>…[x] reserved spaces on site or within [x] walkable feet…</q>
+                <span class="status ok">Met</span>
+              </div>
+              <div class="trace-row" role="listitem">
+                <span class="trace-req">Floodplain</span>
+                <span class="trace-src">RLP, p. 9</span>
+                <q>…not within a 1-percent-annual-chance floodplain…</q>
+                <span class="status ok">Met</span>
+              </div>
+              <div class="trace-row" role="listitem">
+                <span class="trace-req">Security</span>
+                <span class="trace-src">Security attachment, p. 2</span>
+                <q>…Facility Security Level [x] countermeasures…</q>
+                <span class="status work">Needs work</span>
+              </div>
+            </div>
+          </figure>
+
+          <div class="staffing">
+            <h3>Technology does the reading. People make the commitments.</h3>
+            <div class="staffing-grid">
+              <div>
+                <h4>Technology</h4>
+                <p>Solicitation tracking, lease expiration data, building matching, and requirement parsing with source tracing. It finds the right buildings faster and makes sure nothing in the RLP is missed.</p>
+              </div>
+              <div>
+                <h4>Strategic partners</h4>
+                <p>Building owners, developers, and build-out partners who give us site control and the capacity to deliver tenant improvements on the government's schedule.</p>
+              </div>
+              <div>
+                <h4>Licensed professionals</h4>
+                <p>A licensed real estate professional in each state where we respond, who knows the local market and confirms what the data shows.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COMMITMENTS ============ -->
+    <section class="section" id="commitments" aria-labelledby="commit-title">
+      <div class="wrap">
+        <div class="commit-head">
+          <p class="section-label">Commitments</p>
+          <h2 id="commit-title">Three commitments, measured the way the government measures them.</h2>
+        </div>
+        <ol class="commit-grid">
+          <li class="commit">
+            <h3>Right space</h3>
+            <p>Every line of the requirement is checked against the building before it is offered. If the building does not meet the RLP, we do not offer it.</p>
+            <p class="commit-measure"><span>Evaluated as</span> Technically acceptable on every stated requirement</p>
+          </li>
+          <li class="commit">
+            <h3>On time</h3>
+            <p>Every offer is complete and in before the deadline. The space is ready by the date in the lease, with build-out planned backward from occupancy.</p>
+            <p class="commit-measure"><span>Evaluated as</span> Offer received by the due date, space accepted by the lease date</p>
+          </li>
+          <li class="commit">
+            <h3>Fair price</h3>
+            <p>Priced to compete, with the numbers laid out the way the government compares them: shell rent, operating costs, tenant improvements, and amortization, per ABOA square foot.</p>
+            <p class="commit-measure"><span>Evaluated as</span> Price per ABOA square foot, compared across offers</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ COMPANY ============ -->
+    <section class="section section-alt" id="company" aria-labelledby="company-title">
+      <div class="wrap split">
+        <div class="split-head">
+          <p class="section-label">Company</p>
+          <h2 id="company-title">Registered, licensed, and ready to respond.</h2>
+          <div class="candor">
+            <h3>New firm. No federal awards yet.</h3>
+            <p>We would rather you hear it from us. RLPScout is a new small business with no past federal lease awards. What we offer instead is a disciplined process, current market data, licensed partners in each state where we respond, and offers that are checked line by line against your requirement.</p>
+          </div>
+        </div>
+
+        <div class="company-body">
+          <table class="registry">
+            <caption>Registration</caption>
+            <tbody>
+              <tr><th scope="row">Legal name</th><td>RLPSCOUT AI LLC</td></tr>
+              <tr><th scope="row">SAM.gov</th><td>Active through Oct 23, 2027</td></tr>
+              <tr><th scope="row">UEI</th><td><span class="mono">PWYNWV6FJJ18</span> <button class="copy" type="button" data-copy="PWYNWV6FJJ18">Copy</button></td></tr>
+              <tr><th scope="row">CAGE</th><td><span class="mono">26TB9</span> <button class="copy" type="button" data-copy="26TB9">Copy</button></td></tr>
+              <tr><th scope="row">Size</th><td>Small business</td></tr>
+              <tr><th scope="row">Primary NAICS</th><td><span class="mono">531120</span> Lessors of Nonresidential Buildings (except Miniwarehouses)</td></tr>
+              <tr><th scope="row">Other NAICS</th><td><span class="mono">531110</span>, <span class="mono">531130</span>, <span class="mono">531190</span></td></tr>
+              <tr><th scope="row">PSC</th><td><span class="mono">X1AA</span>, <span class="mono">X1AZ</span></td></tr>
+              <tr><th scope="row">Headquarters</th><td>4786 W Daybreak Rim Way #200<br>South Jordan, UT 84009-5143</td></tr>
+              <tr><th scope="row">We respond to</th><td>GSA Public Buildings Service, federal agencies with their own leasing authority, and state and local space requirements</td></tr>
+            </tbody>
+          </table>
+
+          <h3 class="sub-head">Leadership</h3>
+          <div class="people">
+            <div class="person">
+              <p class="person-role">Founder</p>
+              <h4>George Mogga</h4>
+              <p>Background in product, business development, and training roles serving state government agencies.</p>
+              <a href="mailto:gmogga@rlpscout.ai">gmogga@rlpscout.ai</a>
+            </div>
+            <div class="person">
+              <p class="person-role">Co-founder</p>
+              <h4>Andre Havasi</h4>
+              <p>Serial entrepreneur and software developer.</p>
+              <a href="mailto:ahavasi@rlpscout.ai">ahavasi@rlpscout.ai</a>
+            </div>
+          </div>
+
+          <h3 class="sub-head">Licensed real estate professionals</h3>
+          <p class="sub-intro">We work with a licensed real estate professional in each state where we respond.</p>
+          <div class="license">
+            <div class="license-state">Utah</div>
+            <div class="license-body">
+              <h4>Nick Stroman</h4>
+              <p>Sales agent, Real Broker LLC</p>
+              <p class="mono license-no">License 11808668-SA00</p>
+              <p><a href="mailto:nstroman@rlpscout.ai">nstroman@rlpscout.ai</a><br><a href="tel:+17142350104">(714) 235-0104</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-glow" aria-hidden="true"></div>
+      <div class="wrap contact-grid">
+        <div class="contact-intro">
+          <h2 id="contact-title">Send us a requirement, a building, or a question.</h2>
+          <p>Leasing and contracting officers, building owners, and strategic partners can reach the team directly, or use the form.</p>
+
+          <ul class="directory">
+            <li>
+              <span class="dir-name">George Mogga</span><span class="dir-role">Founder</span>
+              <a href="mailto:gmogga@rlpscout.ai">gmogga@rlpscout.ai</a>
+            </li>
+            <li>
+              <span class="dir-name">Andre Havasi</span><span class="dir-role">Co-founder</span>
+              <a href="mailto:ahavasi@rlpscout.ai">ahavasi@rlpscout.ai</a>
+            </li>
+            <li>
+              <span class="dir-name">Nick Stroman</span><span class="dir-role">Licensed sales agent, Utah</span>
+              <a href="mailto:nstroman@rlpscout.ai">nstroman@rlpscout.ai</a>
+              <a href="tel:+17142350104">(714) 235-0104</a>
+            </li>
+            <li>
+              <span class="dir-name">Office</span><span class="dir-role">South Jordan, Utah</span>
+              <a href="tel:+14355656629">(435) 565-6629</a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="inquiry" novalidate data-inquiry>
+          <h3>Inquiry</h3>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-name">Name</label>
+              <input id="f-name" name="name" autocomplete="name" required>
+              <p class="field-error" id="e-name" hidden>Enter your name.</p>
+            </div>
+            <div class="field">
+              <label for="f-org">Organization</label>
+              <input id="f-org" name="organization" autocomplete="organization" required>
+              <p class="field-error" id="e-org" hidden>Enter your agency or company.</p>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" required>
+              <p class="field-error" id="e-email" hidden>Enter an email address like name@agency.gov.</p>
+            </div>
+            <div class="field">
+              <label for="f-phone">Phone <span class="opt">optional</span></label>
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel">
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-role">I am a</label>
+              <select id="f-role" name="role">
+                <option>Government leasing or contracting officer</option>
+                <option>Building owner</option>
+                <option>Strategic partner</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-sol">Solicitation or RLP number <span class="opt">optional</span></label>
+              <input id="f-sol" name="solicitation">
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-msg">Requirement or message</label>
+            <textarea id="f-msg" name="message" rows="5" required placeholder="Location or delineated area, approximate ABOA square feet, occupancy date"></textarea>
+            <p class="field-error" id="e-msg" hidden>Tell us what you need, even briefly.</p>
+          </div>
+          <div class="form-foot">
+            <button class="btn btn-primary" type="submit">Send inquiry</button>
+            <p class="form-note" data-form-note>Sending opens your email app with the message addressed to George Mogga.</p>
+          </div>
+        </form>
+      </div>
+
+      <footer class="site-footer">
+        <div class="wrap footer-grid">
+          <div>
+            <a class="brand" href="#top" aria-label="Back to top">
+              <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M7 12V7h5M20 7h5v5M25 20v5h-5M12 25H7v-5" stroke="currentColor" stroke-width="2" fill="none"/>
+                <path d="M12.5 22V13.5h4V10h3v12" stroke="#eceeef" stroke-width="1.8" fill="none"/>
+              </svg>
+              <span class="brand-word">RLPSCOUT</span>
+            </a>
+            <p class="footer-addr">4786 W Daybreak Rim Way #200<br>South Jordan, UT 84009-5143</p>
+          </div>
+          <nav aria-label="Footer">
+            <a href="#what-we-do">What We Do</a>
+            <a href="#market-data">Market Data</a>
+            <a href="#commitments">Commitments</a>
+            <a href="#company">Company</a>
+            <button type="button" class="linklike" data-open-cap>Capability statement</button>
+          </nav>
+          <div class="footer-reg">
+            <p>UEI <span class="mono">PWYNWV6FJJ18</span></p>
+            <p>CAGE <span class="mono">26TB9</span></p>
+            <p><a href="https://rlpscout.ai">rlpscout.ai</a></p>
+          </div>
+        </div>
+        <div class="wrap footer-base">
+          <p>© 2026 RLPSCOUT AI LLC</p>
+          <p>Small business. South Jordan, Utah.</p>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <!-- ============ CAPABILITY STATEMENT ============ -->
+  <dialog class="cap-dialog" id="cap-dialog" aria-labelledby="cap-title">
+    <div class="cap-toolbar">
+      <p>Capability statement</p>
+      <div>
+        <button class="btn btn-primary btn-sm" type="button" data-print-cap>Print or save as PDF</button>
+        <button class="btn btn-ghost btn-sm" type="button" data-close-cap>Close</button>
+      </div>
+    </div>
+    <article class="cap-sheet" id="cap-sheet">
+      <header class="cap-head">
+        <div>
+          <p class="cap-brand">RLPSCOUT AI LLC</p>
+          <h2 id="cap-title">Capability statement</h2>
+          <p class="cap-sub">Government lease offeror and lessor</p>
+        </div>
+        <div class="cap-contact">
+          <p>4786 W Daybreak Rim Way #200<br>South Jordan, UT 84009-5143</p>
+          <p>(435) 565-6629<br>rlpscout.ai</p>
+        </div>
+      </header>
+
+      <div class="cap-cols">
+        <div>
+          <h3>Company overview</h3>
+          <p>RLPSCOUT AI LLC responds to government Requests for Lease Proposals as offeror and lessor. We start from the agency's exact requirement, search only inside the delineated area, check every line of the RLP against the building, and submit complete offers before the deadline, priced to compete.</p>
+
+          <h3>Core capabilities</h3>
+          <ul>
+            <li>Acting as offeror and lessor of record for leased space</li>
+            <li>Building search and matching inside delineated areas</li>
+            <li>Line-by-line requirement checks, each traced to document, page, and quote</li>
+            <li>Complete offer packages: GSA Forms 1364, 1217, 3518-SAM, 12000, plans, site control, FEMA flood maps</li>
+            <li>Pricing laid out per ABOA square foot, the way the government compares offers</li>
+          </ul>
+
+          <h3>Differentiators</h3>
+          <ul>
+            <li>495 federal lease solicitations followed on SAM.gov, 103 open for offers</li>
+            <li>1,922 expiring federal leases watched from the GSA lease inventory (dated Nov 2, 2026)</li>
+            <li>5,000+ buildings tracked to match against delineated areas</li>
+            <li>A licensed real estate professional in each state where we respond</li>
+          </ul>
+
+          <h3>Commitments</h3>
+          <p><b>Right space.</b> Every line checked before the building is offered. <b>On time.</b> Offers complete and in before the deadline; space ready by the lease date. <b>Fair price.</b> Priced to compete, laid out the way the government compares.</p>
+        </div>
+
+        <div>
+          <h3>Registration</h3>
+          <dl class="cap-dl">
+            <dt>SAM.gov</dt><dd>Active through Oct 23, 2027</dd>
+            <dt>UEI</dt><dd>PWYNWV6FJJ18</dd>
+            <dt>CAGE</dt><dd>26TB9</dd>
+            <dt>Size</dt><dd>Small business</dd>
+            <dt>Primary NAICS</dt><dd>531120</dd>
+            <dt>Other NAICS</dt><dd>531110, 531130, 531190</dd>
+            <dt>PSC</dt><dd>X1AA, X1AZ</dd>
+          </dl>
+
+          <h3>Customers served</h3>
+          <p>GSA Public Buildings Service, federal agencies with their own leasing authority, and state and local space requirements.</p>
+
+          <h3>Past performance</h3>
+          <p>New firm. No federal awards yet.</p>
+
+          <h3>Contacts</h3>
+          <p><b>George Mogga</b>, Founder<br>gmogga@rlpscout.ai</p>
+          <p><b>Andre Havasi</b>, Co-founder<br>ahavasi@rlpscout.ai</p>
+          <p><b>Nick Stroman</b>, Licensed sales agent (Utah)<br>License 11808668-SA00, Real Broker LLC<br>nstroman@rlpscout.ai, (714) 235-0104</p>
+        </div>
+      </div>
+    </article>
+  </dialog>
+
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+
+  <script src="js/hero.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
