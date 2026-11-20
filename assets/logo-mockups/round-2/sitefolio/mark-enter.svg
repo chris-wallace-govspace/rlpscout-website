@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="lm is-enter" role="img" aria-label="Sitefolio">
+<style>
+.lm { overflow: visible; }
+.lm .s { stroke-dasharray: 1 1; stroke-dashoffset: 0; }
+.lm .f, .lm .ring { transform-box: fill-box; transform-origin: center; }
+.lm .ld { display: none; }
+.lm.is-loading .ld { display: inline; }
+.lm.is-enter .s { animation: lm-draw .6s cubic-bezier(.16,1,.3,1) calc(var(--i) * .13s) both; }
+.lm.is-enter .f { animation: lm-pop .42s cubic-bezier(.16,1,.3,1) calc(var(--i) * .13s + .08s) both; }
+.lm.is-exit .s { animation: lm-erase .34s cubic-bezier(.5,0,.75,0) calc(var(--o) * .07s) both; }
+.lm.is-exit .f { animation: lm-drop .3s cubic-bezier(.5,0,.75,0) calc(var(--o) * .07s) both; }
+@keyframes lm-draw { from { stroke-dashoffset: 1; opacity: 0; } 8% { opacity: 1; } to { stroke-dashoffset: 0; opacity: 1; } }
+@keyframes lm-erase { from { stroke-dashoffset: 0; opacity: 1; } 92% { opacity: 1; } to { stroke-dashoffset: -1; opacity: 0; } }
+@keyframes lm-pop { from { transform: scale(0); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+@keyframes lm-drop { from { transform: scale(1); opacity: 1; } to { transform: scale(0); opacity: 0; } }
+
+.lm.is-loading .row { animation: lm-row 2s cubic-bezier(.16,1,.3,1) calc(var(--r) * .22s) infinite; }
+.lm.is-loading .chk { animation: lm-chk 2s cubic-bezier(.16,1,.3,1) infinite; }
+@keyframes lm-row { 0% { stroke-dashoffset: 1; opacity: 1; } 30%, 82% { stroke-dashoffset: 0; opacity: 1; } 100% { stroke-dashoffset: 0; opacity: 0; } }
+@keyframes lm-chk { 0%, 52% { transform: scale(0); opacity: 1; } 62%, 82% { transform: scale(1); opacity: 1; } 100% { transform: scale(1); opacity: 0; } }
+
+.lm.is-loading .bay { animation: lm-bay 1.8s cubic-bezier(.16,1,.3,1) calc(var(--b) * .6s) infinite both; }
+@keyframes lm-bay { 0% { transform: scale(.4); opacity: 0; } 8%, 30% { transform: scale(1); opacity: 1; } 38%, 100% { transform: scale(1); opacity: 0; } }
+
+.lm.is-loading .ring { animation: lm-ping 1.6s cubic-bezier(.16,1,.3,1) calc(var(--p) * .8s) infinite both; }
+@keyframes lm-ping { from { transform: scale(1); opacity: .9; } to { transform: scale(3.4); opacity: 0; } }
+
+.lm .runner { stroke-dasharray: .14 .86; }
+.lm.is-loading .runner { animation: lm-run 1.8s linear infinite; }
+.lm.is-loading .door { opacity: .35; }
+@keyframes lm-run { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -1; } }
+
+.lm.is-loading .cl { animation: lm-check 1.6s cubic-bezier(.65,0,.35,1) infinite; }
+@keyframes lm-check { 0% { stroke-dashoffset: 1; } 42%, 58% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: -1; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .lm *, .lm.is-loading * { animation: none !important; }
+  .lm .ld { display: none !important; }
+  .lm.is-loading [stroke="#22d3ee"], .lm.is-loading [fill="#22d3ee"] { animation: lm-breathe 1.6s ease-in-out infinite !important; }
+  @keyframes lm-breathe { 50% { opacity: .35; } }
+}
+</style>
+  <path d="M19 3H5v26h20V9" stroke="#eceeef" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none" pathLength="1" class="s" style="--i:0;--o:5"/>
+  <path d="M19 3l6 6" stroke="#eceeef" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none" pathLength="1" class="s" style="--i:1;--o:4"/>
+  <path d="M9 25h12" stroke="#eceeef" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none" pathLength="1" class="s row" style="--i:2;--o:3;--r:0"/>
+  <path d="M11 19h10" stroke="#eceeef" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none" pathLength="1" class="s row" style="--i:3;--o:2;--r:1"/>
+  <path d="M15 13h6" stroke="#eceeef" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none" pathLength="1" class="s row" style="--i:4;--o:1;--r:2"/>
+  <rect x="9" y="11" width="4" height="4" fill="#22d3ee" class="f chk" style="--i:5;--o:0"/>
+</svg>

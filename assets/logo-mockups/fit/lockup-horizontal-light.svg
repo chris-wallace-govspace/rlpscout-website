@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196 32" role="img" aria-label="RLPSCOUT">
+  <g>
+  <path d="M15 29H3V13h6V5h6" stroke="#26292c" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+  <path d="M15 3v26" stroke="#0e7490" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+  <path d="M18 4h6v8h6v18H18z" fill="#26292c"/></g>
+  <text x="44" y="23" font-size="20" font-family="Geist, 'Helvetica Neue', Arial, sans-serif" font-weight="500" letter-spacing="1.6" fill="#26292c">RLPSCOUT</text>
+</svg>

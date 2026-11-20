@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Cornerpin mark">
+  <rect width="32" height="32" rx="2" fill="#26292c"/>
+  <path d="M9 3v14M15 23h14" stroke="#eceeef" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+  <path d="M3 23h0M9 29h0" stroke="#6b7278" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+  <rect x="6" y="20" width="6" height="6" fill="#22d3ee"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 146 32" role="img" aria-label="Lessora">
+  <g><path d="M13 29H3V3h13" stroke="#eceeef" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+  <path d="M19 29h10V3H16" stroke="#eceeef" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none"/>
+  <path d="M13 29h6" stroke="#22d3ee" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" fill="none"/></g>
+  <text x="44" y="24" font-size="25" letter-spacing="-0.6" font-family="Geist, 'Helvetica Neue', Arial, sans-serif" font-weight="500" fill="#eceeef">Lessora</text>
+</svg>
