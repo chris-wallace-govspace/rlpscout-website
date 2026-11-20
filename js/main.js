@@ -1,6 +1,7 @@
 (() => {
   const $ = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => [...el.querySelectorAll(s)];
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
   /* ---------- Toast ---------- */
   const toastEl = $('[data-toast]');
@@ -33,6 +34,20 @@
     }
   });
 
+  /* ---------- Header: transparent over the hero, solid once scrolled ---------- */
+  const header = $('.site-header');
+  if (header) {
+    let ticking = false;
+    const syncHeader = () => {
+      header.classList.toggle('is-solid', window.scrollY > 24);
+      ticking = false;
+    };
+    window.addEventListener('scroll', () => {
+      if (!ticking) { ticking = true; requestAnimationFrame(syncHeader); }
+    }, { passive: true });
+    syncHeader();
+  }
+
   /* ---------- Active section in nav ---------- */
   const navMap = new Map($$('#nav-links a[href^="#"]').map((a) => [a.getAttribute('href').slice(1), a]));
   if ('IntersectionObserver' in window) {
@@ -62,6 +77,19 @@
   const steps = $('[data-steps]');
   if (steps) {
     const tabs = $$('[role="tab"]', steps);
+    const tabList = $('[role="tablist"]', steps);
+    const ink = $('.steps-ink', steps);
+    const placeInk = () => {
+      const tab = tabs.find((t) => t.getAttribute('aria-selected') === 'true');
+      if (!ink || !tab) return;
+      ink.style.width = `${tab.offsetWidth}px`;
+      ink.style.transform = `translate(${tab.offsetLeft}px, ${tab.offsetTop + tab.offsetHeight - 1}px)`;
+    };
+    if (ink) {
+      tabList.classList.add('has-ink');
+      placeInk();
+      new ResizeObserver(placeInk).observe(tabList);
+    }
     const select = (tab, focus = true) => {
       tabs.forEach((t) => {
         const on = t === tab;
@@ -69,6 +97,7 @@
         t.tabIndex = on ? 0 : -1;
         document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
       });
+      placeInk();
       if (focus) tab.focus();
     };
     tabs.forEach((tab, i) => {
@@ -90,6 +119,9 @@
     try {
       await navigator.clipboard.writeText(v);
       toast(`Copied ${v}`);
+      btn.textContent = 'Copied';
+      btn.classList.add('is-done');
+      setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('is-done'); }, 1800);
     } catch {
       toast(`Copy failed. Select ${v} and copy it manually.`);
     }
@@ -115,6 +147,12 @@
   if (location.hash === '#capability-statement') {
     requestAnimationFrame(() => $('[data-open-cap]')?.click());
   }
+
+  /* ---------- Owner link preselects the role in the inquiry form ---------- */
+  $$('[data-role]').forEach((a) => a.addEventListener('click', () => {
+    const role = $('#f-role');
+    if (role) role.value = a.dataset.role;
+  }));
 
   /* ---------- Inquiry form ---------- */
   const form = $('[data-inquiry]');
@@ -156,5 +194,68 @@
       const note = $('[data-form-note]');
       if (note) note.textContent = 'Your email app should open with the inquiry filled in. If it did not, email gmogga@rlpscout.ai directly.';
     });
+  }
+
+  /* ---------- Scroll reveal ---------- */
+  const reveals = $$('[data-reveal]');
+  if ('IntersectionObserver' in window) {
+    const ro = new IntersectionObserver((entries) => {
+      entries.forEach((en) => {
+        if (!en.isIntersecting) return;
+        en.target.classList.add('is-in');
+        ro.unobserve(en.target);
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    reveals.forEach((el) => ro.observe(el));
+  } else {
+    reveals.forEach((el) => el.classList.add('is-in'));
+  }
+
+  /* ---------- Trace: scan each requirement, then show its status ---------- */
+  /* The final status text stays in the DOM for assistive tech; only the visible label swaps. */
+  const trace = $('[data-trace]');
+  if (trace && 'IntersectionObserver' in window && !reduceMotion.matches) {
+    const rowsWrap = $('.trace-rows', trace);
+    const rows = $$('.trace-row', trace);
+    const scan = document.createElement('div');
+    scan.className = 'trace-scan';
+    scan.setAttribute('aria-hidden', 'true');
+    rowsWrap.appendChild(scan);
+    rows.forEach((row) => {
+      const st = $('.status', row);
+      const label = st.textContent.trim();
+      st.textContent = '';
+      const fin = document.createElement('span');
+      fin.className = 'status-final';
+      fin.textContent = label;
+      const wait = document.createElement('span');
+      wait.className = 'status-wait';
+      wait.setAttribute('aria-hidden', 'true');
+      wait.textContent = 'Checking';
+      st.append(fin, wait);
+      st.classList.add('is-pending');
+    });
+
+    const run = () => {
+      const h = rowsWrap.offsetHeight;
+      const per = 520;
+      scan.animate(
+        [{ opacity: 0, transform: 'translateY(-56px)' }, { opacity: 1, offset: 0.08 }, { opacity: 1, offset: 0.92 }, { opacity: 0, transform: `translateY(${h - 56}px)` }],
+        { duration: per * rows.length + 200, easing: 'cubic-bezier(0.45, 0, 0.55, 1)', fill: 'forwards' }
+      );
+      rows.forEach((row, i) => {
+        setTimeout(() => {
+          row.classList.add('is-hit');
+          $('.status', row).classList.remove('is-pending');
+          setTimeout(() => row.classList.remove('is-hit'), 420);
+        }, 200 + per * (i + 0.6));
+      });
+    };
+    const to = new IntersectionObserver(([en]) => {
+      if (!en.isIntersecting) return;
+      to.disconnect();
+      setTimeout(run, 350);
+    }, { threshold: 0.6 });
+    to.observe(rowsWrap);
   }
 })();
