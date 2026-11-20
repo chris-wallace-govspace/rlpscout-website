@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -65,6 +66,7 @@
             <button class="btn btn-primary" type="button" data-open-cap>View capability statement</button>
             <a class="btn btn-ghost" href="#what-we-do">See how we match RLPs</a>
           </div>
+          <p class="hero-owner">Own a building inside a delineated area? <a href="#contact" data-role="Building owner">Offer it to us<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a></p>
         </div>
 
         <aside class="hero-card" aria-label="Registration summary">
@@ -86,18 +88,18 @@
     <!-- ============ HOW WE WORK ============ -->
     <section class="section" id="what-we-do" aria-labelledby="work-title">
       <div class="wrap split">
-        <div class="split-head">
-          <p class="section-label">What we do</p>
+        <div class="split-head" data-reveal>
           <h2 id="work-title">One accountable party, from the RLP to the lease.</h2>
           <p class="section-intro">We do not broker space to the government and step away. We respond in our own name, secure the building, and sign as lessor. Each offer follows the same four steps.</p>
         </div>
 
-        <div class="steps" data-steps>
+        <div class="steps" data-steps data-reveal>
           <div class="steps-tabs" role="tablist" aria-label="How we work">
             <button role="tab" id="tab-1" aria-controls="panel-1" aria-selected="true"><span>01</span> Offer</button>
             <button role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1"><span>02</span> Scout</button>
             <button role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false" tabindex="-1"><span>03</span> Check</button>
             <button role="tab" id="tab-4" aria-controls="panel-4" aria-selected="false" tabindex="-1"><span>04</span> Submit</button>
+            <span class="steps-ink" aria-hidden="true"></span>
           </div>
 
           <article class="step-panel" role="tabpanel" id="panel-1" aria-labelledby="tab-1" tabindex="0">
@@ -188,14 +190,13 @@
     <!-- ============ MARKET DATA ============ -->
     <section class="section section-alt" id="market-data" aria-labelledby="data-title">
       <div class="wrap split">
-        <div class="split-head">
-          <p class="section-label">Market data</p>
+        <div class="split-head" data-reveal>
           <h2 id="data-title">We watch the federal lease market so we can answer it quickly.</h2>
           <p class="section-intro">Our data shows us where requirements are open now and where they are likely to come next. Our technology narrows the search. Partners and licensed professionals close it.</p>
         </div>
 
         <div class="data-body">
-          <table class="ledger">
+          <table class="ledger" data-reveal>
             <caption class="sr-only">What RLPScout tracks</caption>
             <thead>
               <tr><th scope="col">Figure</th><th scope="col">What we track</th><th scope="col">Source</th></tr>
@@ -224,7 +225,7 @@
             </tbody>
           </table>
 
-          <figure class="trace">
+          <figure class="trace" data-reveal data-trace>
             <figcaption>
               <span>What a traced requirement looks like</span>
               <small>Format example, not taken from a specific solicitation</small>
@@ -257,7 +258,7 @@
             </div>
           </figure>
 
-          <div class="staffing">
+          <div class="staffing" data-reveal>
             <h3>Technology does the reading. People make the commitments.</h3>
             <div class="staffing-grid">
               <div>
@@ -281,22 +282,21 @@
     <!-- ============ COMMITMENTS ============ -->
     <section class="section" id="commitments" aria-labelledby="commit-title">
       <div class="wrap">
-        <div class="commit-head">
-          <p class="section-label">Commitments</p>
+        <div class="commit-head" data-reveal>
           <h2 id="commit-title">Three commitments, measured the way the government measures them.</h2>
         </div>
         <ol class="commit-grid">
-          <li class="commit">
+          <li class="commit" data-reveal style="--i:0">
             <h3>Right space</h3>
             <p>Every line of the requirement is checked against the building before it is offered. If the building does not meet the RLP, we do not offer it.</p>
             <p class="commit-measure"><span>Evaluated as</span> Technically acceptable on every stated requirement</p>
           </li>
-          <li class="commit">
+          <li class="commit" data-reveal style="--i:1">
             <h3>On time</h3>
             <p>Every offer is complete and in before the deadline. The space is ready by the date in the lease, with build-out planned backward from occupancy.</p>
             <p class="commit-measure"><span>Evaluated as</span> Offer received by the due date, space accepted by the lease date</p>
           </li>
-          <li class="commit">
+          <li class="commit" data-reveal style="--i:2">
             <h3>Fair price</h3>
             <p>Priced to compete, with the numbers laid out the way the government compares them: shell rent, operating costs, tenant improvements, and amortization, per ABOA square foot.</p>
             <p class="commit-measure"><span>Evaluated as</span> Price per ABOA square foot, compared across offers</p>
@@ -308,8 +308,7 @@
     <!-- ============ COMPANY ============ -->
     <section class="section section-alt" id="company" aria-labelledby="company-title">
       <div class="wrap split">
-        <div class="split-head">
-          <p class="section-label">Company</p>
+        <div class="split-head" data-reveal>
           <h2 id="company-title">Registered, licensed, and ready to respond.</h2>
           <div class="candor">
             <h3>New firm. No federal awards yet.</h3>
@@ -318,7 +317,7 @@
         </div>
 
         <div class="company-body">
-          <table class="registry">
+          <table class="registry" data-reveal>
             <caption>Registration</caption>
             <tbody>
               <tr><th scope="row">Legal name</th><td>RLPSCOUT AI LLC</td></tr>
@@ -335,7 +334,7 @@
           </table>
 
           <h3 class="sub-head">Leadership</h3>
-          <div class="people">
+          <div class="people" data-reveal>
             <div class="person">
               <p class="person-role">Founder</p>
               <h4>George Mogga</h4>
@@ -352,7 +351,7 @@
 
           <h3 class="sub-head">Licensed real estate professionals</h3>
           <p class="sub-intro">We work with a licensed real estate professional in each state where we respond.</p>
-          <div class="license">
+          <div class="license" data-reveal>
             <div class="license-state">Utah</div>
             <div class="license-body">
               <h4>Nick Stroman</h4>
@@ -369,7 +368,7 @@
     <section class="contact" id="contact" aria-labelledby="contact-title">
       <div class="contact-glow" aria-hidden="true"></div>
       <div class="wrap contact-grid">
-        <div class="contact-intro">
+        <div class="contact-intro" data-reveal>
           <h2 id="contact-title">Send us a requirement, a building, or a question.</h2>
           <p>Leasing and contracting officers, building owners, and strategic partners can reach the team directly, or use the form.</p>
 
@@ -394,7 +393,7 @@
           </ul>
         </div>
 
-        <form class="inquiry" novalidate data-inquiry>
+        <form class="inquiry" novalidate data-inquiry data-reveal>
           <h3>Inquiry</h3>
           <div class="field-row">
             <div class="field">
