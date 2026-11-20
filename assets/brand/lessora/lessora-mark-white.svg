@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Lessora">
+  <path d="M16 21.5L11.65 14.5A5 5 0 1 1 20.35 14.5ZM16 10a2 2 0 1 0 0 4a2 2 0 1 0 0-4Z" fill="#ffffff" fill-rule="evenodd"/>
+  <path d="M16 3a13 13 0 1 1 0 26a13 13 0 1 1 0-26" stroke="#ffffff" stroke-width="2" stroke-linecap="square" fill="none"/>
+  <path d="M16 3a13 13 0 0 1 13 13" stroke="#ffffff" stroke-width="2" stroke-linecap="square" fill="none"/>
+</svg>
